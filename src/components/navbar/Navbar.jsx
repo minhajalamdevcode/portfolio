@@ -71,10 +71,19 @@ function Navbar() {
     <>
       <nav className="h-24 flex justify-between items-center my-container  relative">
         <h1>
-          <a className="gradient-text text-4xl font-bold" href="#">
-            MINHAJ
-          </a>
-        </h1>
+              <a href="#" className="flex items-center space-x-3">
+             <img
+               src="/minhaj.jpg"
+               alt="Minhaaj Logo"
+               className="h-9 w-9 sm:h-11 sm:w-11 object-cover rounded-full"
+               onClick={() => window.open('/minhaj.jpg', '_self')}
+             />
+     <span className="gradient-text text-2xl sm:text-4xl font-bold">
+      MINHAJ
+    </span>
+  </a>
+</h1>
+
 
         <ul className="hidden lg:flex items-center gap-2">
           <li className="active:scale-75 duration-300">
