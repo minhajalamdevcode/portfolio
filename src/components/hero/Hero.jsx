@@ -39,7 +39,7 @@ function Hero() {
           <span className="gradient-text">...</span> <span ref={firstRef} className="inline-block min-w-[8ch] align-bottom" />
         </div>
         <div className="self-end">
-          <span ref={secondRef} className="inline-block min-w-[10ch] align-bottom" /> <span className="gradient-text">...</span>
+          <span ref={secondRef} className="inline-block min-w-[9ch] align-bottom" /><span className="gradient-text">...</span>
         </div>
       </h2>
 
