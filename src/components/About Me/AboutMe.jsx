@@ -14,12 +14,12 @@ function AboutMe() {
 
       <p className="mb-4 text-lg">
         What drives me the most is creating experiences that not only 
-        <strong className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">look beautiful</strong>
+        <strong className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text"> look beautiful </strong>
          but also
-        <strong className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">feel smooth and intuitive.</strong>
-           Whether it's a landing page or a complex web app, I focus on details, performance, and cross-browser compatibility to ensure a seamless user journey.
+        <strong className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text"> feel smooth and intuitive. </strong>
+           Whether it's a landing page or a complex web app, I focus on details, performance, and cross-browser compatibility to ensure a seamless user journey.&nbsp;
         <strong className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
-          talent, not influence
+           talent,  not influence
         </strong>
         , decides your success.
       </p>
