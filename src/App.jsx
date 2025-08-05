@@ -7,6 +7,7 @@ import SkillsAndTools from './components/Skills & Tools/SkillsAndTools';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
+import InternshipCertificate from './components/Internship&Certificate/InternshipCertificate';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <AboutMe />
         <SkillsAndTools />  
         <Experience />
+        <InternshipCertificate />
         <Projects />
         <CurrentLearningAndFuturePlans />
       </main>

@@ -33,7 +33,7 @@ function Projects() {
       id="projects"
       className="my-container flex flex-col gap-8 lg:flex-row overflow-hidden"
     >
-      <Heading title="Projects" tagline="Turning code into career stories" />
+      <Heading title="Projects" tagline="Creating Interactive Web With Passion" />
       <div className="flex flex-row gap-8 items-center overflow-hidden">
         <div
           ref={element}

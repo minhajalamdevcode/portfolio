@@ -38,7 +38,7 @@ function Footer() {
 
       </div>
 
-      <p className="text-center text-xl pb-4">
+      <p className="text-center text-xl pb-20 pt-4  px-2">
         © 2025 <a className="text-xl hover:bg-gradient-to-r from-blue-500 to-pink-500 hover:text-transparent bg-clip-text" href="#">MinhajAlam.dev</a> | All Rights Reserved
       </p>
 
