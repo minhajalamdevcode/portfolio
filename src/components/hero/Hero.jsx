@@ -31,6 +31,14 @@ function Hero() {
       secondTyped.current.destroy();
     };
   }, []);
+  const scrollToProjects = () => {
+    const projectSection = document.getElementById('projects');
+    if (projectSection) {
+      projectSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
+    
 
   return (
     <div id="hero" className="my-container flex flex-col justify-center gap-32">
@@ -45,7 +53,7 @@ function Hero() {
 
       <div className="flex justify-center items-center gap-8">
         <button type="button" id="btn-type1">Resume</button>
-        <button type="button" id="btn-type1">My Work</button>
+        <button type="button" id="btn-type1" onClick={scrollToProjects}>My Work</button>
       </div>
     </div>
   );

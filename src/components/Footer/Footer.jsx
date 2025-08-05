@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="my-container py-4 overflow-hidden">
+    <footer id="hire-me" className="my-container py-4 overflow-hidden">
       <div className="text-center">
         <h2 className="text-4xl font-semibold w-fit mx-auto bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
           Thanks For Visiting
