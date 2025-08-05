@@ -52,7 +52,7 @@ function Hero() {
       </h2>
 
       <div className="flex justify-center items-center gap-8">
-        <button type="button" id="btn-type1">Resume</button>
+        <button type="button" id="btn-type1" onClick={() => window.open("/Minhaj alam resume.pdf", "_blank")}>Resume</button>
         <button type="button" id="btn-type1" onClick={scrollToProjects}>My Work</button>
       </div>
     </div>
