@@ -102,6 +102,34 @@ html {
     transform: translateX(-50%);
   }
 }
+.shiny-texttt {
+  display: block;
+  background: linear-gradient(90deg, #ffffff 0%, #91afda 100%);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shinee 1.7s linear infinite;
+}
+
+@keyframes shinee {
+  0% {
+    background-position: 20% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes infinite-scroll-left {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 @keyframes infinite-scroll-right {
   0% {
