@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
 function Hero() {
-  const firstRef = useRef(null);  // For 'Frontend' / 'Web'
-  const secondRef = useRef(null); // For 'Developer' / 'Engineer'
+  const firstRef = useRef(null); 
+  const secondRef = useRef(null); 
   const firstTyped = useRef(null);
   const secondTyped = useRef(null);
 

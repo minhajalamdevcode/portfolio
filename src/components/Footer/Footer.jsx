@@ -1,7 +1,51 @@
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import React, { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 
 function Footer() {
+  const firstRef = useRef(null);   // LETS
+  const secondRef = useRef(null);  // CONNECT!
+  const firstTyped = useRef(null);
+  const secondTyped = useRef(null);
+
+  useEffect(() => {
+    const startTyping = () => {
+      firstTyped.current = new Typed(firstRef.current, {
+        strings: ['LETS'],
+        typeSpeed: 50,
+        backSpeed: 50,
+        showCursor: false,
+        loop: false,
+        onComplete: () => {
+          setTimeout(() => {
+            secondTyped.current = new Typed(secondRef.current, {
+              strings: ['CONNECT!'],
+              typeSpeed: 50,
+              backSpeed: 100,
+              showCursor: false,
+              loop: false,
+              onComplete: () => {
+                setTimeout(() => {
+                  // Reset and loop
+                  firstRef.current.innerHTML = '';
+                  secondRef.current.innerHTML = '';
+                  startTyping(); // restart whole sequence
+                }, 1500); // optional pause before looping
+              },
+            });
+          }, 500); // small delay between LETS and CONNECT!
+        },
+      });
+    };
+
+    startTyping(); // kick things off on mount
+
+    return () => {
+      firstTyped.current?.destroy();
+      secondTyped.current?.destroy();
+    };
+  }, []);
   return (
     <footer id="hire-me" className="my-container py-4 overflow-hidden">
       <div className="text-center">
@@ -23,9 +67,9 @@ function Footer() {
             onClick={() => window.open('/minhaj.jpg', '_blank')}
           />
           <h2 className="font-semibold text-[12vw] lg:text-[6vw] xl:text-[78px] leading-none">
-            LETS
+           <span ref={firstRef}></span>
             <br />
-            CONNECT!
+           <span ref={secondRef}></span>
           </h2>
         </div>
 
