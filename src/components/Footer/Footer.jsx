@@ -4,46 +4,33 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
 function Footer() {
-  const firstRef = useRef(null);   // LETS
-  const secondRef = useRef(null);  // CONNECT!
+  const firstRef = useRef(null); 
+  const secondRef = useRef(null); 
   const firstTyped = useRef(null);
   const secondTyped = useRef(null);
 
   useEffect(() => {
-    const startTyping = () => {
-      firstTyped.current = new Typed(firstRef.current, {
-        strings: ['LETS'],
-        typeSpeed: 50,
-        backSpeed: 50,
-        showCursor: false,
-        loop: false,
-        onComplete: () => {
-          setTimeout(() => {
-            secondTyped.current = new Typed(secondRef.current, {
-              strings: ['CONNECT!'],
-              typeSpeed: 50,
-              backSpeed: 100,
-              showCursor: false,
-              loop: false,
-              onComplete: () => {
-                setTimeout(() => {
-                  // Reset and loop
-                  firstRef.current.innerHTML = '';
-                  secondRef.current.innerHTML = '';
-                  startTyping(); // restart whole sequence
-                }, 1500); // optional pause before looping
-              },
-            });
-          }, 500); // small delay between LETS and CONNECT!
-        },
-      });
-    };
+    firstTyped.current = new Typed(firstRef.current, {
+      strings: ['LETS'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 3000,
+      loop: true,
+      showCursor: false,
+    });
 
-    startTyping(); // kick things off on mount
+    secondTyped.current = new Typed(secondRef.current, {
+      strings: ['CONNECT!'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 3000,
+      loop: true,
+      showCursor: false,
+    });
 
     return () => {
-      firstTyped.current?.destroy();
-      secondTyped.current?.destroy();
+      firstTyped.current.destroy();
+      secondTyped.current.destroy();
     };
   }, []);
   return (
