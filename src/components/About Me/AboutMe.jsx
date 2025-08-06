@@ -5,7 +5,7 @@ function AboutMe() {
     <div id="aboutMe" className="my-container flex flex-col gap-8 lg:flex-row lg:justify-between pb-8 sm:pb-16">
       <Heading title="About Me"  tagline="I wasn’t born for this — I’m building myself into it. Real success is earned, not given." />
     <div className="flex flex-col gap-8 items-center justify-center">
-      <p className="mb-4 text-lg">Hi, I'm Minhaj — passionate Frontend Developer with a love for turning ideas into clean, responsive, and interactive websites{' '}
+      <p className="mb-4 text-lg">Hi, I'm Minhaj Alam — passionate Frontend Developer with a love for turning ideas into clean, responsive, and interactive websites{' '}
         <strong className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
            I specialize in building sleek user interfaces using HTML, CSS, JavaScript, and modern frameworks like React.
         </strong>

@@ -8,6 +8,6 @@ export const certificates = [
     {
       id: 2,
       title: "Internship Certificate",
-      file: "/internship-certificate.pdf",
+      file: "/NG-2025-CERTIFICATE-0008.pdf",
     },
   ];

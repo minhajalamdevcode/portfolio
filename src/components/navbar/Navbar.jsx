@@ -118,14 +118,14 @@ function Navbar() {
               EXPERIENCE
             </a>
           </li>
-          <li className="active:scale-75 duration-300">
+          {/* <li className="active:scale-75 duration-300">
             <a
               className="py-2 px-2 text-xl font-semibold gradient-text-hover"
               href="#projects"
               >
               PROJECTS
             </a>
-          </li>
+          </li> */}
           <li className="active:scale-75 duration-300 ml-8">
             <a
               className="py-2 px-6 text-xl font-semibold"
@@ -190,14 +190,14 @@ function Navbar() {
               EXPERIENCE
             </a>
           </li>
-          <li ref={projects} className="active:scale-75 duration-300" onClick={() => setOpenNavbar(false)}>
+          {/* <li ref={projects} className="active:scale-75 duration-300" onClick={() => setOpenNavbar(false)}>
             <a
               className="py-2 px-2 text-xl font-semibold gradient-text-hover inline-block"
               href="#projects"
             >
               PROJECTS
             </a>
-          </li>
+          </li> */}
           <li ref={hireMe} className="active:scale-75 duration-300" onClick={() => setOpenNavbar(false)}>
             <a
               className="py-2 px-6 text-xl font-semibold inline-block"

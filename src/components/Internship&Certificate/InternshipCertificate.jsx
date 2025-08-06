@@ -18,7 +18,8 @@ function InternshipCertificate() {
               href={item.file}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 sm:mt-0 text-blue-600 hover:underline font-medium"
+              className="py-2 px-6 text-xl font-semibold border-solid border-black outline outline-black"
+              id='btn-type1'
             >
               View Certificate
             </a>
